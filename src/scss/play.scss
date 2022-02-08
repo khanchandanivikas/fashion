@@ -1,0 +1,22 @@
+@import "mixins";
+@import "variables";
+
+.play-container {
+    @include flex-center(column);
+    width: 100%;
+    position: absolute;
+    z-index: 2;
+    top: 92%;
+    color: $text-color;
+    font-size: 2rem;
+
+    & .far {
+        cursor: pointer;
+        @include transition;
+
+        &:hover {
+            color: $hover-color;
+        }
+    }
+
+}

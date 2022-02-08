@@ -1,0 +1,18 @@
+@import "variables";
+
+@mixin flex-center($flex-direction) {
+    display: flex;
+    align-items: center;
+    flex-direction: $flex-direction;
+}
+
+@mixin background-image ($url) {
+    background-image: url($url);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+@mixin transition {
+    transition: all 0.2s ease;
+}

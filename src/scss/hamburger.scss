@@ -1,0 +1,36 @@
+@import "variables";
+@import "mixins";
+
+.hamburger-menu, .hamburger-menu .hide {
+    background-color: $overlay;
+    position: fixed;
+    z-index: 8;
+    color: $text-color;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    @include flex-center(row);
+    justify-content: center;
+    margin-top: 3.5rem;
+    @include transition;
+
+    & ul {
+        list-style: none;
+        @include flex-center(column);
+        justify-content: center;
+
+        & li {
+            margin: 0.5rem 0;
+            cursor: pointer;
+            @include transition;
+            &:hover {
+                color: $hover-color;
+            }
+        }
+    }
+}
+
+.hide {
+    left: -120%;
+}

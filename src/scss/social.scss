@@ -1,0 +1,20 @@
+@import "mixins";
+@import "variables";
+
+.social-container {
+    @include flex-center(column);
+
+    & .fab {
+        padding-bottom: 1rem;
+        margin-left: 1rem;
+        color: $text-color;
+        z-index: 1 !important;
+        cursor: pointer;
+        @include transition;
+
+        &:hover {
+            color: $hover-color;
+            transform: rotate(20deg);
+        }
+    }
+}

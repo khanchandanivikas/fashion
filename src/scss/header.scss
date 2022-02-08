@@ -1,0 +1,22 @@
+@import "variables";
+@import "mixins";
+
+.header_container {
+    @include flex-center(row);
+    justify-content: space-between;
+    padding: 1rem 2rem;
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    color: $text-color;
+
+    & .fa-bars,
+    .fa-shopping-cart {
+        cursor: pointer;
+        @include transition;
+
+        &:hover {
+            color: $hover-color;
+        }
+    }
+}
