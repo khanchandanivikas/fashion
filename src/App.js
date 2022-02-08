@@ -20,7 +20,7 @@ function App() {
       <div className="slides-container">
         <Content />
         <Slider />
-        {/* <Social /> */}
+        <Social />
       </div>
       <Play />
       <Hamburger hamburger={hamburger} />
