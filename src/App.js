@@ -1,7 +1,4 @@
 import "./scss/main.scss";
-import carrousalOne from "./images/carrousal-one.jpg";
-import carrousalTwo from "./images/carrousal-two.jpg";
-import carrousalThree from "./images/carrousal-three.jpg";
 import Header from "./components/Header";
 import Content from "./components/Content";
 import Slider from "./components/Slider";
@@ -15,7 +12,7 @@ function App() {
   const toggleHamburger = () => {
     setHamburger(!hamburger);
   };
-  
+
   return (
     <div className="App">
       <div className="overlay"></div>
