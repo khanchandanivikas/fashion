@@ -15,21 +15,7 @@ function App() {
   const toggleHamburger = () => {
     setHamburger(!hamburger);
   };
-
-  const text = [
-    {
-      heading: "creative design",
-      imgSrc: { carrousalOne },
-    },
-    {
-      heading: "creative design2",
-      imgSrc: { carrousalTwo },
-    },
-    {
-      heading: "creative design3",
-      imgSrc: { carrousalThree },
-    },
-  ];
+  
   return (
     <div className="App">
       <div className="overlay"></div>
