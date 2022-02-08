@@ -8,7 +8,8 @@ const Content = () => {
     visible: {
       translateX: "0px",
       transition: {
-        duration: 0.6,
+        duration: 1.2,
+        ease: "easeInOut"
       },
     },
   };
@@ -18,6 +19,7 @@ const Content = () => {
       translateX: "0px",
       transition: {
         duration: 0.6,
+        ease: "easeInOut"
       },
     },
   };
@@ -28,6 +30,7 @@ const Content = () => {
       transition: {
         duration: 1,
         delay: 0.1,
+        ease: "easeInOut"
       },
     },
   };

@@ -13,6 +13,7 @@ const Slider = () => {
       translateY: "0px",
       transition: {
         duration: 1,
+        ease: "easeInOut"
       },
     },
   };
@@ -23,7 +24,8 @@ const Slider = () => {
       translateY: "0px",
       transition: {
         duration: 1.2,
-        delay: 0.3
+        delay: 0.3,
+        ease: "easeInOut"
       },
     },
   };
@@ -34,7 +36,8 @@ const Slider = () => {
       translateY: "0px",
       transition: {
         duration: 1.4,
-        delay: 0.5
+        delay: 0.5,
+        ease: "easeInOut"
       },
     },
   };

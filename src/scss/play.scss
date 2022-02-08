@@ -4,9 +4,10 @@
 .play-container {
     @include flex-center(column);
     width: 100%;
-    position: absolute;
+    margin-top: -3rem;
+    // position: absolute;
     z-index: 2;
-    top: 92%;
+    // top: 92%;
     color: $text-color;
     font-size: 2rem;
 

@@ -15,12 +15,12 @@ function App() {
 
   return (
     <div className="App">
-      <div className="overlay"></div>
+      {/* <div className="overlay"></div> */}
       <Header hamburger={hamburger} toggleHamburger={toggleHamburger} />
       <div className="slides-container">
         <Content />
         <Slider />
-        <Social />
+        {/* <Social /> */}
       </div>
       <Play />
       <Hamburger hamburger={hamburger} />

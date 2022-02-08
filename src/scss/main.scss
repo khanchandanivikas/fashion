@@ -6,20 +6,20 @@
 body {
     font-family: 'Rubik', sans-serif;
     @include background-image("../images/background.jpg");
-    height: 100%;
+    height: 100vh;
     width: 100vw;
 }
 
-.overlay {
-    position: absolute;
-    left: 0;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    background: $overlay;
-    z-index: 1;
-    width: 100%;
-}
+// .overlay {
+//     position: absolute;
+//     left: 0;
+//     top: 0;
+//     right: 0;
+//     bottom: 0;
+//     background: $overlay;
+//     z-index: 1;
+//     width: 100%;
+// }
 
 img {
     width: 100%;
