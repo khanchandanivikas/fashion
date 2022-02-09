@@ -1,11 +1,13 @@
 import React from "react";
 import { motion } from "framer-motion";
 import "../scss/slider.scss";
-import carrousalOne from "../images/carrousal-one.jpg";
-import carrousalTwo from "../images/carrousal-two.jpg";
-import carrousalThree from "../images/carrousal-three.jpg";
 
-const Slider = () => {
+const Slider = (props) => {
+  const text = props.text;
+  const length = text.length;
+  const activeSlide = props.activeSlide;
+  console.log(activeSlide)
+
   const animationOne = {
     hidden: { opacity: 0, translateY: "60px" },
     visible: {
@@ -47,21 +49,21 @@ const Slider = () => {
         variants={animationOne}
         initial="hidden"
         animate="visible"
-        src={carrousalOne}
+        src={text[activeSlide].image}
         alt="fashion slide one"
       />
       <motion.img
         variants={animationTwo}
         initial="hidden"
         animate="visible"
-        src={carrousalTwo}
+        src={text[activeSlide + 1 < length ? activeSlide + 1 : 0].image}
         alt="fashion slide two"
       />
       <motion.img
         variants={animationThree}
         initial="hidden"
         animate="visible"
-        src={carrousalThree}
+        src={text[activeSlide + 2 < length ?  activeSlide + 2 : 0].image}
         alt="fashion slide three"
       />
     </div>

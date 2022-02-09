@@ -1,10 +1,13 @@
 import React from "react";
 import "../scss/play.scss";
 
-const Play = () => {
+const Play = (props) => {
+  const nextSlide = props.nextSlide;
   return (
     <footer className="play-container">
-      <i class="far fa-play-circle"></i>
+      <button onClick={nextSlide}>
+        <i class="far fa-play-circle"></i>
+      </button>
     </footer>
   );
 };

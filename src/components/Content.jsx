@@ -2,14 +2,16 @@ import React from "react";
 import "../scss/content.scss";
 import { motion } from "framer-motion";
 
-const Content = () => {
+const Content = (props) => {
+  const text = props.text;
+  const activeSlide = props.activeSlide;
   const headingAnimation = {
     hidden: { translateX: "40px" },
     visible: {
       translateX: "0px",
       transition: {
         duration: 1.2,
-        ease: "easeInOut"
+        ease: "easeInOut",
       },
     },
   };
@@ -19,7 +21,7 @@ const Content = () => {
       translateX: "0px",
       transition: {
         duration: 0.6,
-        ease: "easeInOut"
+        ease: "easeInOut",
       },
     },
   };
@@ -30,14 +32,15 @@ const Content = () => {
       transition: {
         duration: 1,
         delay: 0.1,
-        ease: "easeInOut"
+        ease: "easeInOut",
       },
     },
   };
   return (
     <main className="content-container">
       <motion.h1 variants={headingAnimation} initial="hidden" animate="visible">
-        CREA<span>TIVE</span> <span>DE</span>SIGN
+        {/* CREA<span>TIVE</span> <span>DE</span>SIGN */}
+        {text[activeSlide].heading}
       </motion.h1>
       <div className="collection">
         <motion.h4
@@ -49,10 +52,7 @@ const Content = () => {
         </motion.h4>
       </div>
       <motion.p variants={textAnimation} initial="hidden" animate="visible">
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestias
-        quisquam aperiam vitae odio natus tenetur architecto, temporibus
-        sapiente, minima eligendi reiciendis tempora autem laudantium adipisci
-        harum. Temporibus explicabo enim placeat.
+        {text[activeSlide].content}
       </motion.p>
       <motion.div
         variants={textAnimation}
