@@ -56,7 +56,7 @@ const Slider = (props) => {
         variants={animationTwo}
         initial="hidden"
         animate="visible"
-        src={text[activeSlide + 1 < length ? activeSlide + 1 : 0].image}
+        src={text[activeSlide + 1 < length ? activeSlide + 1 : 1].image}
         alt="fashion slide two"
       />
       <motion.img
