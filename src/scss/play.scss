@@ -4,16 +4,14 @@
 .play-container {
     @include flex-center(column);
     width: 100%;
-    margin-top: -2rem;
-    // position: absolute;
-    z-index: 2;
-    // top: 92%;
+    height: 80px;
     color: $text-color;
     font-size: 2rem;
 
     & .far {
         cursor: pointer;
         @include transition;
+        z-index: 5;
 
         &:hover {
             color: $hover-color;

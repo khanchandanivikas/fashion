@@ -6,8 +6,11 @@
 body {
     font-family: 'Rubik', sans-serif;
     @include background-image("../images/background.jpg");
-    height: 100%;
-    width: 100vw;
+}
+
+App {
+    height: 100vh;
+    width: 100%;
 }
 
 // .overlay {
@@ -31,6 +34,6 @@ img {
     grid-template-columns: 40% 50% 10%;
     justify-content: center;
     align-items: center;
-    width: 100%;
-   height: 90vh;
+    height: calc(100vh - 80px);
+    padding-top: 80px;
 }
