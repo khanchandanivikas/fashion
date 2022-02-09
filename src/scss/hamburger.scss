@@ -12,7 +12,7 @@
     left: 0;
     @include flex-center(row);
     justify-content: center;
-    margin-top: 3.5rem;
+    margin-top: 70px;
     @include transition;
 
     & ul {

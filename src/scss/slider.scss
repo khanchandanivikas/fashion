@@ -5,30 +5,34 @@
     width: 100%;
     height: 100%;
 
-    & img {
+    & .slider-image {
         border-radius: 10px;
         max-width: 300px;
         box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
             rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
     }
 
-    & img:nth-child(1) {
+    & .slider-image:nth-child(1) {
         z-index: 4;
         width: 95%;
         height: 95%;
+        animation: slide
     }
 
-    & img:nth-child(2) {
+    & .slider-image:nth-child(2) {
         width: 80%;
         height: 80%;
         z-index: 2;
         margin-left: -10%;
     }
 
-    & img:nth-child(3) {
+    & .slider-image:nth-child(3) {
         width: 65%;
         height: 65%;
         z-index: 1;
         margin-left: -15%;
+    }
+    & .slider-image.hide {
+        opacity: 0;
     }
 }

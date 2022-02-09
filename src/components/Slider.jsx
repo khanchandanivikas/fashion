@@ -6,7 +6,6 @@ const Slider = (props) => {
   const text = props.text;
   const length = text.length;
   const activeSlide = props.activeSlide;
-  console.log(activeSlide)
 
   const animationOne = {
     hidden: { opacity: 0, translateY: "60px" },
@@ -15,7 +14,7 @@ const Slider = (props) => {
       translateY: "0px",
       transition: {
         duration: 1,
-        ease: "easeInOut"
+        ease: "easeInOut",
       },
     },
   };
@@ -27,7 +26,7 @@ const Slider = (props) => {
       transition: {
         duration: 1.2,
         delay: 0.3,
-        ease: "easeInOut"
+        ease: "easeInOut",
       },
     },
   };
@@ -39,7 +38,7 @@ const Slider = (props) => {
       transition: {
         duration: 1.4,
         delay: 0.5,
-        ease: "easeInOut"
+        ease: "easeInOut",
       },
     },
   };
@@ -50,20 +49,31 @@ const Slider = (props) => {
         initial="hidden"
         animate="visible"
         src={text[activeSlide].image}
+        className="slider-image"
         alt="fashion slide one"
       />
       <motion.img
         variants={animationTwo}
         initial="hidden"
         animate="visible"
-        src={text[activeSlide + 1 < length ? activeSlide + 1 : 1].image}
+        src={text[activeSlide + 1 < length ? activeSlide + 1 : 0].image}
+        className="slider-image"
         alt="fashion slide two"
       />
       <motion.img
         variants={animationThree}
         initial="hidden"
         animate="visible"
-        src={text[activeSlide + 2 < length ?  activeSlide + 2 : 0].image}
+        src={
+          text[
+            activeSlide + 2 < length
+              ? activeSlide + 2
+              : activeSlide === 2
+              ? 1
+              : 0
+          ].image
+        }
+        className="slider-image"
         alt="fashion slide three"
       />
     </div>

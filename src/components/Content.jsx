@@ -38,10 +38,33 @@ const Content = (props) => {
   };
   return (
     <main className="content-container">
-      <motion.h1 variants={headingAnimation} initial="hidden" animate="visible">
-        {/* CREA<span>TIVE</span> <span>DE</span>SIGN */}
-        {text[activeSlide].heading}
-      </motion.h1>
+      {activeSlide === 0 && (
+        <motion.h1
+          variants={headingAnimation}
+          initial="hidden"
+          animate="visible"
+        >
+          CREA<span>TIVE</span> <span>DE</span>SIGN
+        </motion.h1>
+      )}
+      {activeSlide === 1 && (
+        <motion.h1
+          variants={headingAnimation}
+          initial="hidden"
+          animate="visible"
+        >
+          <span>PASSION</span>NATE PUR<span>SUIT</span>
+        </motion.h1>
+      )}
+      {activeSlide === 2 && (
+        <motion.h1
+          variants={headingAnimation}
+          initial="hidden"
+          animate="visible"
+        >
+          <span>BE</span> <span>YOU</span>RSELF
+        </motion.h1>
+      )}
       <div className="collection">
         <motion.h4
           variants={collectionAnimation}
