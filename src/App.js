@@ -13,9 +13,17 @@ function App() {
     setHamburger(!hamburger);
   };
 
+  const [sliderClassName, setSliderClassName] = useState("slider-image");
+
   const [activeSlide, setActiveSlide] = useState(0);
   const nextSlide = () => {
-    setActiveSlide(activeSlide === text.length - 1 ? 0 : activeSlide + 1);
+    // setTimeout(() => {
+      setActiveSlide(activeSlide === text.length - 1 ? 0 : activeSlide + 1);
+    // }, 2000);
+    setSliderClassName("slider-image hide");
+    setTimeout(() => {
+      setSliderClassName("slider-image");
+    }, 2000);
   };
 
   const text = [
@@ -47,7 +55,11 @@ function App() {
       <Header hamburger={hamburger} toggleHamburger={toggleHamburger} />
       <div className="slides-container">
         <Content text={text} activeSlide={activeSlide} />
-        <Slider text={text} activeSlide={activeSlide} />
+        <Slider
+          text={text}
+          activeSlide={activeSlide}
+          sliderClassName={sliderClassName}
+        />
         <Social />
       </div>
       <Play nextSlide={nextSlide} />

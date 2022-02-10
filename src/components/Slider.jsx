@@ -6,6 +6,7 @@ const Slider = (props) => {
   const text = props.text;
   const length = text.length;
   const activeSlide = props.activeSlide;
+  const sliderClassName = props.sliderClassName;
 
   const animationOne = {
     hidden: { opacity: 0, translateY: "60px" },
@@ -49,7 +50,7 @@ const Slider = (props) => {
         initial="hidden"
         animate="visible"
         src={text[activeSlide].image}
-        className="slider-image"
+        className={sliderClassName}
         alt="fashion slide one"
       />
       <motion.img
@@ -57,7 +58,7 @@ const Slider = (props) => {
         initial="hidden"
         animate="visible"
         src={text[activeSlide + 1 < length ? activeSlide + 1 : 0].image}
-        className="slider-image"
+        className={sliderClassName}
         alt="fashion slide two"
       />
       <motion.img
@@ -73,7 +74,7 @@ const Slider = (props) => {
               : 0
           ].image
         }
-        className="slider-image"
+        className={sliderClassName}
         alt="fashion slide three"
       />
     </div>
