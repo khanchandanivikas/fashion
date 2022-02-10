@@ -17,10 +17,10 @@ function App() {
 
   const [activeSlide, setActiveSlide] = useState(0);
   const nextSlide = () => {
-    // setTimeout(() => {
-      setActiveSlide(activeSlide === text.length - 1 ? 0 : activeSlide + 1);
-    // }, 2000);
     setSliderClassName("slider-image hide");
+    setTimeout(() => {
+      setActiveSlide(activeSlide === text.length - 1 ? 0 : activeSlide + 1);
+    }, 1000);
     setTimeout(() => {
       setSliderClassName("slider-image");
     }, 2000);
