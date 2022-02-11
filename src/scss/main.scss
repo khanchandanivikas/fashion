@@ -36,4 +36,22 @@ img {
     align-items: center;
     height: calc(100vh - 80px);
     padding-top: 80px;
+
+    @include media-xl {
+        grid-template-columns: 35% 60% 5%;
+    }
+
+    @include media-lg-xl {
+        grid-template-columns: 30% 65% 5%;
+    }
+
+    @include media-lg {
+        grid-template-columns: 1fr 1fr;
+
+        & .slider-container {
+            order: 1;
+            grid-column-start: 1;
+            grid-column-end: -3;
+        }
+    }
 }

@@ -8,9 +8,20 @@
     color: $text-color;
     z-index: 5;
     letter-spacing: 1px;
+    @include media-lg-xl {
+        margin-left: 0;
+    }
 
     & h1 {
         font-size: 7rem;
+        
+        @include media-xl {
+            font-size: 6rem;
+        }
+
+        @include media-lg-xl {
+            font-size: 5rem;
+        }
 
         & span {
             color: $hover-color;

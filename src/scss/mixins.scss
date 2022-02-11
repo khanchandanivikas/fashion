@@ -16,3 +16,45 @@
 @mixin transition {
     transition: all 0.2s ease;
 }
+
+@mixin media-xs {
+    @media only screen and (max-width: 481px) {
+        @content;
+    }
+}
+
+@mixin media-sm {
+    @media only screen and (max-width: 768px) {
+        @content;
+    }
+}
+
+@mixin media-md {
+    @media only screen and (max-width: 768px) {
+        @content;
+    }
+}
+
+@mixin media-lg {
+    @media only screen and (max-width: 1024px) {
+        @content;
+    }
+}
+
+@mixin media-lg-xl {
+    @media only screen and (max-width: 1200px) {
+        @content;
+    }
+}
+
+@mixin media-xl {
+    @media only screen and (max-width: 1340px) {
+        @content;
+    }
+}
+
+@mixin media-xxl {
+    @media only screen and (min-width: 1440px) {
+        @content;
+    }
+}
