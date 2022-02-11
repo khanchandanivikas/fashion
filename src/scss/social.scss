@@ -3,6 +3,13 @@
 
 .social-container {
     @include flex-center(column);
+    @include media-xl {
+        padding-right: 2rem;
+    }
+
+    @include media-lg {
+        align-items: flex-end;
+    }
 
     & .fab {
         padding-bottom: 1rem;

@@ -6,6 +6,7 @@
     height: 100%;
     opacity: 1;
     transition: opacity 1s ease;
+
     @include media-lg {
         padding: 2rem;
     }
@@ -19,7 +20,11 @@
             rgba(0, 0, 0, 0.4) 0px 30px 60px -30px;
 
         @include media-lg {
-            max-width: 365px;
+            max-width: 100%;
+        }
+
+        @include media-xxl {
+            max-width: 320px;
         }
     }
 
