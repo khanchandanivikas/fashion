@@ -53,7 +53,7 @@ const Content = (props) => {
           initial="hidden"
           animate="visible"
         >
-          <span>PASSION</span>NATE PUR<span>SUIT</span>
+          <span>FASH</span>ION BL<span>OG</span>
         </motion.h1>
       )}
       {activeSlide === 2 && (
