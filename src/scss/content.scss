@@ -27,6 +27,10 @@
             padding-left: 2rem;
         }
 
+        @include media-lg {
+            font-size: 4rem;
+        }
+
         & span {
             color: $hover-color;
         }
@@ -67,5 +71,9 @@
         @include media-lg {
             padding-left: 2rem;
         }
+    }
+
+    @include media-lg {
+        padding: 0;
     }
 }

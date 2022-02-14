@@ -44,7 +44,7 @@ const Content = (props) => {
           initial="hidden"
           animate="visible"
         >
-          CREA<span>TIVE</span> <span>DE</span>SIGN
+          DES<span>IGN</span> <span>A</span>RT
         </motion.h1>
       )}
       {activeSlide === 1 && (
@@ -53,7 +53,7 @@ const Content = (props) => {
           initial="hidden"
           animate="visible"
         >
-          <span>FASH</span>ION BL<span>OG</span>
+          <span>FASH</span>IO BL<span>OG</span>
         </motion.h1>
       )}
       {activeSlide === 2 && (
@@ -62,7 +62,7 @@ const Content = (props) => {
           initial="hidden"
           animate="visible"
         >
-          <span>BE</span> <span>YOU</span>RSELF
+          <span>BEN</span> <span>TRE</span>NDI
         </motion.h1>
       )}
       <div className="collection">

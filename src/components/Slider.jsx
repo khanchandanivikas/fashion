@@ -9,7 +9,7 @@ const Slider = (props) => {
   const sliderClassName = props.sliderClassName;
 
   const animationOne = {
-    hidden: { opacity: 0, translateY: "60px" },
+    hidden: { opacity: 0, translateY: "10px" },
     visible: {
       opacity: 1,
       translateY: "0px",
@@ -20,7 +20,7 @@ const Slider = (props) => {
     },
   };
   const animationTwo = {
-    hidden: { opacity: 0, translateY: "60px" },
+    hidden: { opacity: 0, translateY: "10px" },
     visible: {
       opacity: 1,
       translateY: "0px",
@@ -32,7 +32,7 @@ const Slider = (props) => {
     },
   };
   const animationThree = {
-    hidden: { opacity: 0, translateY: "60px" },
+    hidden: { opacity: 0, translateY: "10px" },
     visible: {
       opacity: 1,
       translateY: "0px",

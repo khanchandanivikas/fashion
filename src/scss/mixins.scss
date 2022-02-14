@@ -17,14 +17,8 @@
     transition: all 0.2s ease;
 }
 
-@mixin media-xs {
-    @media only screen and (max-width: 481px) {
-        @content;
-    }
-}
-
 @mixin media-sm {
-    @media only screen and (max-width: 768px) {
+    @media only screen and (max-width: 481px) {
         @content;
     }
 }

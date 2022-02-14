@@ -20,4 +20,8 @@
             color: $hover-color;
         }
     }
+
+    @include media-lg {
+        padding: 0 1.3rem;
+    }
 }
