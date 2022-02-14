@@ -30,6 +30,9 @@
         @include media-lg {
             font-size: 4rem;
         }
+        @include media-sm {
+            font-size: 2rem;
+        }
 
         & span {
             color: $hover-color;
