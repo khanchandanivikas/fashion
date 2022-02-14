@@ -36,7 +36,6 @@ img {
 
     @include media-lg {
         grid-template-columns: 1fr 1fr;
-        height: auto;
 
         & .slider-container {
             order: 1;
@@ -47,9 +46,13 @@ img {
 
     @include media-md {
         grid-template-columns: 1fr;
+        height: auto;
 
         & .slider-container {
             order: 0;
+        }
+        & .content-container {
+            order: 1;
         }
     }
 }

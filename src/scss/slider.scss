@@ -28,6 +28,10 @@
         z-index: 4;
         width: 95%;
         height: 95%;
+        @include media-md {
+            width: 80%;
+            height: auto;
+        }
     }
 
     & .slider-image:nth-child(2) {
