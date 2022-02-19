@@ -15,16 +15,16 @@ const Content = (props) => {
       },
     },
   };
-  const collectionAnimation = {
-    hidden: { translateX: "-100px" },
-    visible: {
-      translateX: "0px",
-      transition: {
-        duration: 0.6,
-        ease: "easeInOut",
-      },
-    },
-  };
+  // const collectionAnimation = {
+  //   hidden: { translateX: "-100px" },
+  //   visible: {
+  //     translateX: "0px",
+  //     transition: {
+  //       duration: 0.6,
+  //       ease: "easeInOut",
+  //     },
+  //   },
+  // };
   const textAnimation = {
     hidden: { translateY: "50px" },
     visible: {
@@ -53,7 +53,7 @@ const Content = (props) => {
           initial="hidden"
           animate="visible"
         >
-          <span>FASH</span>IO BL<span>OG</span>
+          <span>RUN</span>WAY BL<span>OG</span>
         </motion.h1>
       )}
       {activeSlide === 2 && (
@@ -62,12 +62,12 @@ const Content = (props) => {
           initial="hidden"
           animate="visible"
         >
-          <span>BEN</span> <span>TRE</span>NDI
+          <span>NEW</span> <span>TRE</span>NDS
         </motion.h1>
       )}
       <div className="collection">
         <motion.h4
-          variants={collectionAnimation}
+          variants={textAnimation}
           initial="hidden"
           animate="visible"
         >

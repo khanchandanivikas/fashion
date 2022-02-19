@@ -50,8 +50,8 @@
 
     & .collection,
     .shop {
-        @include flex-center(columns);
-        justify-content: flex-end;
+        // @include flex-center(columns);
+        // justify-content: flex-end;
         margin: 1rem 0;
 
         & button {
